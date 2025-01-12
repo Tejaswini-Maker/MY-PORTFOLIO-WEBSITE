@@ -1,0 +1,180 @@
+<<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejaswini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1 class="logo"><span style="background: linear-gradient(150deg, rgba(255, 192, 203, 0.926), rgba(0, 128, 115, 0.668)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> NEERETI TEJASWINI</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home"><span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">HOME</span></h2></a></li>
+                <li><a href="#about"><span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ABOUT</span></h2></a></li>
+                <li><a href="#projects"><span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">PROJECTS</span></h2></a></li>
+                <li><a href="#contact"><span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CONTACT</span></h2></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Heroine Section -->
+    <section id="home" class="heroine">
+        <div class="heroine-content">
+            <img src="images/WhatsApp Image 2025-01-12 at 7.54.19 PM.jpeg" alt="Tejaswini's Portrait" style="width:150px; height:auto; border: radius 100px;%;">
+            <h2>HELLO!
+                I'M <span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> NEERETI TEJASWINI</span></h2>
+            <p>I'm a Student passionate about full stack development, Web Development, and want to know how far my skills take me!</p>
+            <a href="#projects" class="btn"><span style="background: linear-gradient(120deg, rgb(192, 250, 255), rgba(126, 0, 128, 0.705)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> EXPLORE MY WORK </span></a>
+        </div>
+    </section>
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2><span style="background: linear-gradient(120deg, rgba(229, 192, 255, 0.684), purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ABOUT</span></h2>
+    <p>I am a B.Tech student with a strong passion for Full Stack Development and Web Development. I enjoy designing and building seamless, user-centric web applications that solve real-world problems. My journey in technology has been driven by curiosity and a desire to continuously learn and adapt to emerging trends.</p>
+
+    <!-- Buttons for Skills, Education, and Experience -->
+    <div class="about-buttons">
+        <button id="skills-btn" class="about-btn">Skills</button>
+        <button id="education-btn" class="about-btn">Education</button>
+        <button id="experience-btn" class="about-btn">Experience</button>
+    </div>
+
+    <!-- Dynamic Content Section -->
+    <div id="about-details" class="about-details" style="display: none;"></div>
+</section>
+
+    
+    <!-- Projects Section -->
+     <section id="projects" class="projects">
+        <h2><span style="background: linear-gradient(120deg, rgba(229, 192, 255, 0.684), purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">PROJECTS</span></h2>
+    <div class="project-card">
+
+        <img src="images/Screenshot 2025-01-12 200042.png" alt="Music Recommendation Project" style="width:100%; height:auto; border-radius:8px;">
+        <h3>MUSIC RECOMMENDATION BASED ON FACIAL EXPRESSION</h3>
+        <p>Developed a deep learning-based system that uses facial expression recognition to recommend mood-appropriate music. Leveraged Convolutional Neural Networks (CNN) for emotion detection and
+
+                    mapped expressions to suitable audio tracks. Integrated real-time emotion analysis and personalized
+
+                    music playback for an engaging and therapeutic user experience.
+
+                    Technologies Used: Python, TensorFlow/Keras, OpenCV, Librosa, Pydub.
+
+                    Highlights:
+
+                    Achieved efficient emotion detection using the FER2013 dataset.
+
+                    Implemented real-time facial expression analysis and emotion-to-music mapping.
+
+                    Enhanced user experience with supportive text display for motivation.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/Screenshot 2025-01-12 183946.png" alt="Healing Advice Project" style="width:100%; height:auto; border-radius:8px;">
+                <h3>HEALING ADVICE</h3>
+                <p>Designed a platform that provides detailed recommendations for top specialist doctors based on
+                    specific pain or health concerns. Includes contact information and direct links for appointment
+                    booking to streamline patient care access.
+
+                    Features:
+
+                    Tailored doctor suggestions based on pain type or condition.
+
+                    Quick access to contact numbers and booking links.
+
+
+                    Technologies Used:
+
+                    1. Frontend Development:
+
+                    HTML, CSS, JavaScript: For designing the user interface and ensuring interactivity.
+
+                    Frameworks: React.js
+
+
+                    2. Backend Development:
+
+                    Node.js, Python (Django), PHP: For building the backend logic and APIs.
+
+                    Database Management: MongoDB for storing doctor details and user data.
+
+
+                    3. APIs and Integrations:
+
+                    Google Maps API: To show clinic locations.
+
+                    Booking APIs: Integration with third-party appointment booking systems.
+
+
+                    4. Data Management:
+
+                    Database Systems: MySQL for storing doctor details and user queries.
+
+                    Search Indexing: ElasticSearch for quick doctor search results.
+
+
+                    5. Other Tools:
+
+                    Bootstrap: For responsive UI.
+
+                    Twilio: For sending appointment confirmation messages or doctor notifications.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/Screenshot 2025-01-12 193411.png" alt="Smart Water Planting" style="width:100%; height:auto; border-radius:8px;">
+                <h3>SMART WATER PLANTING USING AUDUINO</h3>
+                <p>Built an Arduino-based automated watering system using a humidity sensor to monitor soil moisture
+                    levels and control water flow through pipes. The system is powered by batteries and connected via
+                    wires, ensuring efficient plant care with minimal manual intervention.
+
+                    Technologies Used:
+
+                    Arduino microcontroller
+
+                    Humidity and soil moisture sensors
+
+                    Water pump, pipes, and relay module
+
+                    Batteries and connecting wires
+
+                    C/C++ programming for Arduino
+
+
+                    Highlights:
+
+                    Real-time soil moisture monitoring and automated watering.
+
+                    Energy-efficient design powered by batteries.
+
+                    Scalable for home gardening or small-scale agriculture.
+                </p>
+            </div>
+        </div>
+     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2><span style="background: linear-gradient(120deg, pink, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CONTACT ME</span></h2>
+
+        <form id="contact-form">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <textarea placeholder="Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Tejaswini Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
